@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+@layer base{
+    body{
+        @apply font-body bg-black scrollbar-hide
+    }
+}
+
+@layer components{
+    .sidebarIcon{
+        @apply h-6 text-[#808080] cursor-pointer;
+    }
+    .tag{
+        @apply py-1.5 px-3 bg-[#282828] text-[#cecece] rounded-xl font-bold text-xs border-2 border-[#484848]
+    }
+}
