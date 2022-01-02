@@ -54,6 +54,26 @@ const Body = ({spotifyApi,chooseTrack}) => {
         })
     },[accessToken])
 
+    const genres = [{
+        genre:'Classic'
+    },{
+        genre:'House'
+    },{
+        genre:'Minimal'
+    },{
+        genre:'Hip-Hop'
+    },{
+        genre:'Electronic'
+    },{
+        genre:'Chillout'
+    },{
+        genre:'Blues'
+    },{
+        genre:'Country'
+    },{
+        genre:'Techno'
+    }]
+
     console.log(newReleases)
 
     return (
@@ -70,6 +90,19 @@ const Body = ({spotifyApi,chooseTrack}) => {
                     chooseTrack={chooseTrack}
                      />
                 )) }
+            </div>
+            <div className='flex gap-x-8 absolute min-w-full md:relative ml-6'>
+                <div className='hidden xl:inline max-w-[270px]'>
+                    <h2 className='text-white font-bold mb-3'>Genres</h2>
+                    <div className='flex gap-x-2 gap-y-2.5 flex-wrap mb-3'>
+                        {genres && genres.map((genre) => (
+                            <div className='genre'>{genre.genre}</div>
+                        ))}
+                    </div>
+                    <button className='text-[#CECECE] bg-[#1A1A1A] text-[13px] py-3.5 px-4 rounded-2xl w-full font-bold bg-opacity-80 hover:bg-opacity-100 transition ease-out'>
+                        All Genres
+                    </button>
+                </div>
             </div>
         </section>
     )

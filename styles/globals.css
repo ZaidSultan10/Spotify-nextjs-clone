@@ -15,6 +15,9 @@
         @apply h-6 text-[#808080] cursor-pointer;
     }
     .tag{
-        @apply py-1.5 px-3 bg-[#282828] text-[#cecece] rounded-xl font-bold text-xs border-2 border-[#484848]
+        @apply py-1.5 px-3 bg-[#282828] text-[#cecece] rounded-xl font-bold text-xs border-2 border-[#484848];
+    }
+    .genre{
+        @apply bg-[#101010] text-[#CECECE] border border-[#484848] rounded-xl py-2.5 px-3.5 text-[11px] font-bold cursor-default;
     }
 }
